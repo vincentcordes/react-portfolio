@@ -1,0 +1,32 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.design {
+    position: fixed;
+    float: left;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.polyleft {
+    fill: #843b62;
+}
+
+.polyright {
+    fill: #bbc2cc;
+    opacity: 50%;
+}
+
+.temp {
+    /* background-color: #f1f4ff; */
+    /* background-color: #a2a2a1; */
+    /* background-color: #bbc2cc; */
+    border-radius: 16px;
+    padding: 8px;
+    /* color: #ff3633; */
+}

@@ -1,0 +1,30 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: solid 2px #843b62;
+    border-bottom: solid 1px #843b62;
+    width: 50vw;
+    padding: 8px 8px;
+    transition: .3s;
+}
+
+.section-p {
+    margin: 8px;
+}
+
+.section-header {
+    margin: 8px;
+}
+
+.section-container:hover {
+    border-color: #ff3633;
+    padding: 8px 16px;
+}
