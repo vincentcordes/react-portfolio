@@ -1,0 +1,2 @@
+export const Jobs = ['FIGHTER', 'THIEF', 'MONK', 'RED MAGE', 'WHITE MAGE', 'BLACK MAGE'];
+export const JobImages = ['Fighter.png', 'Thief.png', 'Monk.png', 'RedMage.png', 'WhiteMage.png', 'BlackMage.png'];

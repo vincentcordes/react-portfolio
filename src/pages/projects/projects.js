@@ -14,10 +14,15 @@ function Projects() {
                     imgPath={""}
                     summary={"An overview of professional projects I have worked on."}
                 />
-                <Card header={"Professoinal"}
-                    link={"/projects/professional"}
+                <Card header={"Pi Controller v1"}
+                    link={"/projects/picontrollerv1"}
                     imgPath={""}
-                    summary={"An overview of professional projects I have worked on."}
+                    summary={"GUI GPIO controller for Raspberry Pi written in C."}
+                />
+                <Card header={"Pi Controller v2"}
+                    link={"/projects/picontrollerv2"}
+                    imgPath={""}
+                    summary={"Blazor Server application for Raspberry Pi remote hardware control."}
                 />
             </div>
         </div>
