@@ -14,7 +14,7 @@ function Apps() {
                     summary={"A letter unscrambler. Able to find all of the english words that can be built from a set of letters."} />
                 <Card header={"FF Party Gen"}
                     link={"/apps/ffpartygen"}
-                    imgPath={""}
+                    imgPath={"ffpartygen.png"}
                     summary={"A random party generator for Final Fantasy."} />
             </div>
             <Outlet />

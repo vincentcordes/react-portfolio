@@ -5,9 +5,11 @@
     margin: 8px;
     background-color: #843b62;
     border: solid 1px #843b62;
-    font-size: 16px;
+    font-size: 22px;
     color: #f1f4ff;
     transition: .3s;
+    min-width: 70px;
+    min-height: 50px;
 }
 
 .buttonone:hover {

@@ -14,7 +14,7 @@ function Projects() {
                 />
                 <Card header={"Cmdlist"}
                     link={"/projects/cmdlist"}
-                    imgPath={""}
+                    imgPath={"cmdlist.png"}
                     summary={"A command line application written in rust for quick command lookup."}
                 />
                 <Card header={"Pi Controller v1"}

@@ -4,7 +4,7 @@ import "../assets/styles/card.css";
 import image from "../assets/images/demo.png";
 
 function Card({ header, link, imgPath, summary }) {
-    const images = require.context("../assets/images/apps", true);
+    const images = require.context("../assets/images/general", true);
     let image = "";
     if (imgPath.length > 3) {
         image = images(`./${imgPath}`);
