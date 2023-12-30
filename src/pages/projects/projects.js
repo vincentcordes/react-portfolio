@@ -1,8 +1,6 @@
 import React from "react";
 import Card from "../../components/card";
-import "../../assets/styles/paragraphcentered.css";
-import "../../assets/styles/projects.css";
-import "../../assets/styles/basepage.css";
+import "../../assets/styles/basestyles.css";
 
 function Projects() {
     return (
@@ -14,6 +12,11 @@ function Projects() {
                     imgPath={""}
                     summary={"An overview of professional projects I have worked on."}
                 />
+                <Card header={"Cmdlist"}
+                    link={"/projects/cmdlist"}
+                    imgPath={""}
+                    summary={"A command line application written in rust for quick command lookup."}
+                />
                 <Card header={"Pi Controller v1"}
                     link={"/projects/picontrollerv1"}
                     imgPath={""}
@@ -23,6 +26,11 @@ function Projects() {
                     link={"/projects/picontrollerv2"}
                     imgPath={""}
                     summary={"Blazor Server application for Raspberry Pi remote hardware control."}
+                />
+                <Card header={"Video Capture"}
+                    link={"/projects/videocapture"}
+                    imgPath={""}
+                    summary={"Electron app for basic video capture."}
                 />
             </div>
         </div>

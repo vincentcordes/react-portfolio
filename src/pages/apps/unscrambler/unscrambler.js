@@ -3,7 +3,7 @@ import Section from "./section";
 import ButtonOne from "../../../components/buttonone";
 import InputOne from "../../../components/inputone";
 import Dictionary from "../../../utils/dictionary";
-import "../../../assets/styles/unscrambler.css";
+import "../../../assets/styles/basestyles.css";
 
 function Unscrambler() {
     const [sections, setSections] = React.useState({});
@@ -28,7 +28,7 @@ function Unscrambler() {
     }
 
     return (
-        <div className="unscrambler">
+        <div className="base">
             <h1>Unscrambler</h1>
             <InputOne placeholder={"enter some letters!"}
                 type={"text"}

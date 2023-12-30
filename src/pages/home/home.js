@@ -5,11 +5,11 @@ import '../../assets/styles/home.css'
 function Home() {
     return (
         <div className="home">
-            <h1 className="temp"></h1>
+            <h1>About myself</h1>
             <Paragraph
                 str={`Hello there, and welcome! I'm Vinny, a software engineer with more than six years 
                      of profesional experience developing applications in C#. My free time is spent learning
-                     a wide range technologies outside of C#, everything from Rust to React.
+                     a wide range technologies, everything from Rust to React.
                      Currently I am looking to experience more of the development world
                      outside of industrial automation.
                      `}

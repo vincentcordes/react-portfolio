@@ -1,10 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Paragraph from "../../components/paragraph";
 import Card from "../../components/card";
-import "../../assets/styles/apps.css"
-import "../../assets/styles/paragraphcentered.css"
-import "../../assets/styles/basepage.css"
+import "../../assets/styles/basestyles.css"
 
 function Apps() {
     return (
