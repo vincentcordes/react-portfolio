@@ -15,13 +15,15 @@
 
 .polyleft {
     fill: #843b62;
+    /* fill: #015d53; */
+    /* fill: #60938088; */
+    /* fill: linear-gradient(to bottom, #015d53, transparent); */
 }
 
 .polyright {
     fill: #bbc2cc;
     opacity: 50%;
 }
-
 
 @media screen and (max-width: 479px) {
     .layout {

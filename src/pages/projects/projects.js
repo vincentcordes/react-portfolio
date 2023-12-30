@@ -7,15 +7,20 @@ function Projects() {
         <div className="base">
             <p className="paragraphcentered">A listing and breakdown of various projects I've worked on over the years.</p>
             <div className="base-container">
-                <Card header={"Professoinal"}
-                    link={"/projects/professional"}
-                    imgPath={""}
-                    summary={"An overview of professional projects I have worked on."}
-                />
                 <Card header={"Cmdlist"}
                     link={"/projects/cmdlist"}
                     imgPath={"cmdlist.png"}
                     summary={"A command line application written in rust for quick command lookup."}
+                />
+                <Card header={"Video Capture"}
+                    link={"/projects/videocapture"}
+                    imgPath={""}
+                    summary={"Electron app for basic video capture."}
+                />
+                <Card header={"Professoinal"}
+                    link={"/projects/professional"}
+                    imgPath={""}
+                    summary={"An overview of professional projects I have worked on."}
                 />
                 <Card header={"Pi Controller v1"}
                     link={"/projects/picontrollerv1"}
@@ -25,7 +30,7 @@ function Projects() {
                 <Card header={"Pi Controller v2"}
                     link={"/projects/picontrollerv2"}
                     imgPath={""}
-                    summary={"Blazor Server application for Raspberry Pi remote hardware control."}
+                    summary={"Blazor Server application for Raspberry Pi hardware control."}
                 />
                 <Card header={"Video Capture"}
                     link={"/projects/videocapture"}

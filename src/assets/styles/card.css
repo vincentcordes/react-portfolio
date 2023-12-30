@@ -6,9 +6,9 @@
 }
 
 .card-inner {
-    border: solid 2px #843b62;
+    border: solid 3px #843b62;
     border-radius: 16px;
-    height: 15vh;
+    height: 17vh;
     width: 15vw;
     min-width: 200px;
     min-height: 120px;
@@ -26,13 +26,12 @@
 
 .card-navlink {
     text-decoration: none;
-    border-radius: 16px;
+    border-radius: 8px;
 }
-
 
 .card-inner:hover {
     /* border: solid 2px #ff3633; */
-    border: solid 2px transparent;
+    border: solid 3px transparent;
     /* background-color: #843b6244; */
     /* background-color: #f1f4ff99; */
 
@@ -42,13 +41,13 @@
 }
 
 .card-image {
-    height: 15vh;
+    height: 17vh;
     width: 15vw;
     min-width: 200px;
     min-height: 120px;
-    z-index: -1;
-    border-radius: 16px;
-    border: solid .5px transparent;
+    /* z-index: -2; */
+    border-radius: 12px;
+    border: solid 0px transparent;
     margin: 0px;
     padding: 0px;
     opacity: 100%;
@@ -67,7 +66,6 @@
     opacity: 0%;
     transition: .5s;
     color: black;
-    font-weight: bold;
 }
 
 .card-text:hover {
