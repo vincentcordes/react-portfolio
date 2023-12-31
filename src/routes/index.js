@@ -1,13 +1,19 @@
 import React from "react";
 import PathConstants from "./pathConstants";
 
+// navbar
 const Home = React.lazy(() => import("../pages/home/home"));
 const Apps = React.lazy(() => import("../pages/apps/apps"));
 const Projects = React.lazy(() => import("../pages/projects/projects"));
 const About = React.lazy(() => import("../pages/about/about"));
 const Contact = React.lazy(() => import("../pages/contact/contact"));
+
+// apps
 const FFPartyGen = React.lazy(() => import("../pages/apps/FFPartyGen/partygen"));
 const Unscrambler = React.lazy(() => import("../pages/apps/unscrambler/unscrambler"));
+const Calculator = React.lazy(() => import("../pages/apps/calculator/calculator"));
+
+// projects
 const Cmdlist = React.lazy(() => import("../pages/projects/cmdlist"));
 const PiControllerV1 = React.lazy(() => import("../pages/projects/picontrolerv1"));
 const PiControllerV2 = React.lazy(() => import("../pages/projects/picontrolerv2"));
@@ -22,6 +28,7 @@ const routes = [
     { path: PathConstants.ABOUT, element: <About /> },
     { path: PathConstants.APPROUTES.FFPARTYGEN, element: <FFPartyGen /> },
     { path: PathConstants.APPROUTES.UNSCRAMBLER, element: <Unscrambler /> },
+    { path: PathConstants.APPROUTES.CALCULATOR, element: <Calculator /> },
     { path: PathConstants.PROJECTROUTES.CMDLIST, element: <Cmdlist /> },
     { path: PathConstants.PROJECTROUTES.PICONTROLLERV1, element: <PiControllerV1 /> },
     { path: PathConstants.PROJECTROUTES.PICONTROLLERV2, element: <PiControllerV2 /> },

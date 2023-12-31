@@ -32,11 +32,6 @@ function Projects() {
                     imgPath={""}
                     summary={"Blazor Server application for Raspberry Pi hardware control."}
                 />
-                <Card header={"Video Capture"}
-                    link={"/projects/videocapture"}
-                    imgPath={""}
-                    summary={"Electron app for basic video capture."}
-                />
             </div>
         </div>
     );

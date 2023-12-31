@@ -16,6 +16,10 @@ function Apps() {
                     link={"/apps/ffpartygen"}
                     imgPath={"ffpartygen.png"}
                     summary={"A random party generator for Final Fantasy."} />
+                {/* <Card header={"Calculator"}
+                    link={"/apps/calculator"}
+                    imgPath={""}
+                    summary={"A basic calculator"} /> */}
             </div>
             <Outlet />
         </div>
