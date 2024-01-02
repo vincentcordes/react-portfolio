@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.background-dark {
+    background-color: #37393a;
+}
+
 .base-container {
     display: flex;
     flex-wrap: wrap;

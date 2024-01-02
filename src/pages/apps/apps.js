@@ -2,11 +2,17 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Card from "../../components/card";
 import "../../assets/styles/basestyles.css"
+import Paragraph from "../../components/paragraph";
 
 function Apps() {
     return (
         <div className="base">
-            <p className="paragraphcentered">A collection of applications built using React. Everything here can be run directly in the browser.</p>
+            {/* <p className="paragraphcentered">A collection of applications built using React. Everything here can be run directly in the browser.</p> */}
+            <Paragraph
+                header={"Apps"}
+                str={
+                    ["A collection of applications built using React. Everything here can be run directly in the browser."]
+                } />
             <div className="base-container">
                 <Card header={"Unscrambler"}
                     link={"/apps/unscrambler"}

@@ -1,11 +1,13 @@
 import React from "react";
 import Card from "../../components/card";
+import Paragraph from "../../components/paragraph";
 import "../../assets/styles/basestyles.css";
 
 function Projects() {
     return (
         <div className="base">
-            <p className="paragraphcentered">A listing and breakdown of various projects I've worked on over the years.</p>
+            <Paragraph header={"Projects"}
+                str={["A listing and breakdown of various projects I've worked on over the years."]} />
             <div className="base-container">
                 <Card header={"Cmdlist"}
                     link={"/projects/cmdlist"}

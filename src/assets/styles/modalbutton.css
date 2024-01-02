@@ -1,0 +1,30 @@
+.modal-button {
+    background-color: #843b62;
+    color: #f1f4ff;
+    padding: 0px;
+    border: solid 2px transparent;
+    border-radius: 50px;
+    box-shadow: none;
+    height: 26px;
+    width: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-button:hover {
+    background-color: #bbc2cc;
+    cursor: pointer;
+}
+
+.modal-svg {
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    color: #f1f4ff;
+}
+
+.modal-shape {
+
+    fill: white;
+}
