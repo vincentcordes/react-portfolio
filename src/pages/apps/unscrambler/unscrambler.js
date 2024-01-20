@@ -59,8 +59,6 @@ function findWords(str) {
     // get str as char array
     const chars = str.replace(/[^a-zA-Z]+/g, '').toUpperCase().split('');
 
-    // let trimmedDictionary = Dictionary.map(w => w.toUpperCase());
-    // const trimmedDictionary = Dictionary.filter(w => {
     const trimmedDictionary = [];
     Dictionary.forEach(w => {
         // store a hash map of chars and char count

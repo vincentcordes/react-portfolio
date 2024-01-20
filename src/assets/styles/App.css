@@ -2,3 +2,7 @@
   text-align: center;
   display: flex;
 }
+
+::selection {
+  background-color: #bbc2cc;
+}
