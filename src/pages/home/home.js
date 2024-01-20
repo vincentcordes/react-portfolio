@@ -10,7 +10,6 @@ import '../../assets/styles/paragraph.css';
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
 
-
     return (
         <div className="home">
             <Modal onClose={() => setIsOpen(false)}

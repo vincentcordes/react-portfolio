@@ -6,16 +6,22 @@ import Dictionary from "../../../utils/dictionary";
 import "../../../assets/styles/basestyles.css";
 
 function Unscrambler() {
-    const [sections, setSections] = React.useState({});
     const [inputCharacters, setInputCharacters] = React.useState("");
+    const [sections, setSections] = React.useState({});
     const [wordCount, setWordCount] = React.useState(0);
+
+    const onKeyUpHandler = (e) => {
+        if (e.key === 'Enter') {
+            findHandler();
+        }
+    }
 
     const findHandler = () => {
         let foundWords = findWords(inputCharacters);
         setWordCount(foundWords.length);
 
         let wordMap = {}
-        foundWords.map(w => {
+        foundWords.forEach(w => {
             if (wordMap[w.length] === undefined) {
                 wordMap[w.length] = [];
                 wordMap[w.length].push(w);
@@ -24,6 +30,7 @@ function Unscrambler() {
                 wordMap[w.length].push(w);
             }
         });
+
         setSections(wordMap);
     }
 
@@ -32,8 +39,10 @@ function Unscrambler() {
             <h1>Unscrambler</h1>
             <InputOne placeholder={"enter some letters!"}
                 type={"text"}
+                onKeyUp={e => onKeyUpHandler(e)}
                 onInput={e => setInputCharacters(e.target.value)}
-                value={inputCharacters} />
+                value={inputCharacters}
+            />
             <ButtonOne onClick={findHandler}
                 text={"Unscramble"} />
 
@@ -45,17 +54,20 @@ function Unscrambler() {
 }
 
 function findWords(str) {
-    // get str as char array
+    // remove any unwanted chars
     // make sure we are working with all upper case letters
-    const chars = str.toUpperCase().split('');
-    let trimmedDictionary = Dictionary.map(w => w.toUpperCase());
+    // get str as char array
+    const chars = str.replace(/[^a-zA-Z]+/g, '').toUpperCase().split('');
 
-    trimmedDictionary = trimmedDictionary.filter(w => {
+    // let trimmedDictionary = Dictionary.map(w => w.toUpperCase());
+    // const trimmedDictionary = Dictionary.filter(w => {
+    const trimmedDictionary = [];
+    Dictionary.forEach(w => {
         // store a hash map of chars and char count
         let tempMap = buildCharMap(chars);
         let include = true;
 
-        w.split('').map(c => {
+        w.split('').forEach(c => {
             // don't include the word if it is has a char not in the hashmap
             if (tempMap[c] === undefined) {
                 include = false;
@@ -70,7 +82,7 @@ function findWords(str) {
         });
 
         if (include) {
-            return w;
+            trimmedDictionary.push(w);
         }
     });
 
@@ -79,7 +91,7 @@ function findWords(str) {
 
 function buildCharMap(chars) {
     let charMap = {};
-    chars.map(c => {
+    chars.forEach(c => {
         if (charMap[c] === undefined) {
             charMap[c] = 1;
         }
