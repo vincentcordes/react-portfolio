@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Final-Fantasy';
+    src: local('Final-Fantasy'), url(../fonts/Final-Fantasy.ttf);
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
 .party-container {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +17,7 @@
 
 .job {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     font-family: "Final-Fantasy";
     color: #FFF;
     background: #11117e;
@@ -34,7 +41,7 @@
     }
 
     .job {
-        min-width: 150px;
+        min-width: 190px;
     }
 }
 
@@ -44,6 +51,6 @@
     }
 
     .job {
-        min-width: 150px;
+        min-width: 190px;
     }
 }

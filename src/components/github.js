@@ -5,7 +5,10 @@ function Github({ href }) {
     return (
         <a className="github-a"
             href={href}
-            target="_blank">Github</a>
+            rel="noreferrer"
+            target="_blank">
+            Github
+        </a>
     );
 
 }

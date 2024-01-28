@@ -5,6 +5,7 @@ const PathConstants = {
         FFPARTYGEN: "/apps/ffpartygen",
         UNSCRAMBLER: "/apps/unscrambler",
         CALCULATOR: "/apps/calculator",
+        VISUALCALCULATOR: "/apps/visualcalculator",
     },
     PROJECTS: "/projects",
     PROJECTROUTES: {

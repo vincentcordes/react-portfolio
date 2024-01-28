@@ -34,6 +34,7 @@
     padding: 6px 42px;
     color: #f1f4ff;
     transition: .3s;
+    border-bottom: solid 2px transparent;
 }
 
 .active {

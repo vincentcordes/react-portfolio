@@ -1,0 +1,8 @@
+.vcalculator-canvas {
+    width: 1400;
+    height: 750;
+    border: 3px solid #843b62;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
