@@ -1,8 +1,91 @@
 .vcalculator-canvas {
     width: 1400;
     height: 750;
-    border: 3px solid #843b62;
-    background-color: white;
+    border: 4px solid #37393a;
+    background-color: #f1f4ff33;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.vcalculator-inline-container {
+    display: flex;
+}
+
+.vcalculator-controls-container {
+    list-style-type: none;
+    margin: 0 4px;
+    padding: 2px;
+    border: solid 4px #37393a;
+    border-radius: 8px;
+    background-color: #f1f4ff33;
+}
+
+.vcalculator-controls-button {
+    margin: 2px 0;
+    border: solid 3px transparent;
+    border-radius: 8px;
+    width: 140px;
+    height: 60px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.vcalculator-button-start {
+    background-color: #a2a2a1cc;
+}
+
+.vcalculator-button-add {
+    background-color: #ff7700cc;
+}
+
+.vcalculator-button-subtract {
+    background-color: #1166ffcc;
+}
+
+.vcalculator-button-multiply {
+    background-color: #ff3633cc;
+}
+
+.vcalculator-button-divide {
+    background-color: #843b62cc;
+}
+
+.vcalculator-button-total {
+    background-color: #34aa34cc;
+}
+
+.vcalculator-button-delete {
+    background-color: #37393acc;
+}
+
+.vcalculator-button-start:hover {
+    background-color: #a2a2a1;
+}
+
+.vcalculator-button-add:hover {
+    background-color: #ff7700;
+}
+
+.vcalculator-button-subtract:hover {
+    background-color: #1166ff;
+}
+
+.vcalculator-button-multiply:hover {
+    background-color: #ff3633;
+}
+
+.vcalculator-button-divide:hover {
+    background-color: #843b62;
+}
+
+.vcalculator-button-total:hover {
+    background-color: #34aa34;
+}
+
+.vcalculator-button-delete:hover {
+    background-color: #37393a;
 }

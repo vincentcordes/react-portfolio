@@ -1,11 +1,10 @@
-import React, { Children, useState } from "react";
+import React, { useState } from "react";
 import Paragraph from "../../components/paragraph";
 import Modal from "../../components/modal";
 import ModalButton from "../../components/modalbutton";
 import "../../assets/styles/modal.css";
 import '../../assets/styles/home.css';
 import '../../assets/styles/paragraph.css';
-
 
 function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +13,11 @@ function Home() {
         <div className="home">
             <Modal onClose={() => setIsOpen(false)}
                 open={isOpen}
+                locked={false}
+                children={null}
             >
                 <p>
-                    Visit the blogs for more informaiton about this site.
+                    Visit the About page for more informaiton about this site.
                 </p>
             </Modal>
 

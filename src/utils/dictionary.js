@@ -5089,7 +5089,6 @@ const Dictionary = [
     'BISTRO',
     'BISTROS',
     'BIT',
-    'BITCH',
     'BITE',
     'BITER',
     'BITERS',

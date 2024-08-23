@@ -1,0 +1,6 @@
+silver #bbc2cc
+silver #a2a2a1
+lt black #37393a
+purple #843b62
+red #ff3633
+white #f1f4ff

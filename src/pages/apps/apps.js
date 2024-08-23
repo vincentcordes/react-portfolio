@@ -26,6 +26,10 @@ function Apps() {
                     link={"/apps/visualcalculator"}
                     imgPath={""}
                     summary={""} />
+                <Card header={"Wordle Assistant"}
+                    link={"/apps/wordle_assistant"}
+                    imgPath={""}
+                    summary={""} />
                 {/* <Card header={"Calculator"}
                     link={"/apps/calculator"}
                     imgPath={""}

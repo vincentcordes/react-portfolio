@@ -11,6 +11,7 @@ const Contact = React.lazy(() => import("../pages/contact/contact"));
 // apps
 const FFPartyGen = React.lazy(() => import("../pages/apps/FFPartyGen/partygen"));
 const Unscrambler = React.lazy(() => import("../pages/apps/unscrambler/unscrambler"));
+const WordleAssistant = React.lazy(() => import("../pages/apps/wordle_assistant/wordle_assistant"));
 const Calculator = React.lazy(() => import("../pages/apps/calculator/calculator"));
 const VisualCalculator = React.lazy(() => import("../pages/apps/visualcalculator/visualcalculator"));
 
@@ -31,6 +32,7 @@ const routes = [
     // APPS
     { path: PathConstants.APPROUTES.FFPARTYGEN, element: <FFPartyGen /> },
     { path: PathConstants.APPROUTES.UNSCRAMBLER, element: <Unscrambler /> },
+    { path: PathConstants.APPROUTES.WORDLEASSISTANT, element: <WordleAssistant /> },
     { path: PathConstants.APPROUTES.CALCULATOR, element: <Calculator /> },
     { path: PathConstants.APPROUTES.VISUALCALCULATOR, element: <VisualCalculator /> },
     // PROJECTS
