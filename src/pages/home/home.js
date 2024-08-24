@@ -25,11 +25,11 @@ function Home() {
                 header={"About Myself"}
                 str={
                     [
-                        `Hello there and welcome. I'm Vinny, a software engineer with more than six years
-                     of profesional experience developing applications in C#. My free time is spent learning
-                     a wide range technologies, everything from Rust to React.
-                     Currently I am looking to experience more of the development world
-                     outside of industrial automation.
+                        `Hello there and welcome. I'm Vinny, a software engineer with more than seven years
+                     of profesional experience developing applications. Most of that time has been spent working
+                     in C#. While C# is my primary language, I've been fortunate enough to work on projects that
+                     have required C++, Visual Basic, Java Script, Python, and even Rust. Currently I am looking
+                     to experience more of the development world outside of industrial automation.
                      `]
                 }
             />

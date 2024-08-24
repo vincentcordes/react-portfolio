@@ -23,7 +23,7 @@ function FFPartyGen() {
                 <Paragraph
                     header={"Motivation"}
                     str={[
-                        "I'm a pretty big Final Fantasy nerd typically play through FF1 a few times a year. Using a randomized party can add a fun level of challenge to a run."
+                        "I'm a pretty big Final Fantasy nerd and I typically play through FF1 a few times a year. Using a randomized party can add some fun."
                     ]}
                     children={[]}
                 />
