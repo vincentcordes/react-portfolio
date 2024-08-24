@@ -89,7 +89,6 @@ function WordleAssistant() {
                     ]}
                     children={[]}
                 />
-
             </Modal>
 
             <div className="base-inline">
