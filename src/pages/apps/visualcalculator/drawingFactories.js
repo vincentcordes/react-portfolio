@@ -12,7 +12,7 @@ export function drawConnections() {
 
 function drawInputControl(text, x, y, ctx) {
     drawEmptyRect(x, y, 160, 28, -15, 56, "black", 2, ctx);
-    let textParams = createTextParams("inputText", "123118532.23", x, y, ctx);
+    let textParams = createTextParams("inputText", "0", x, y, ctx);
     drawText(textParams);
 }
 

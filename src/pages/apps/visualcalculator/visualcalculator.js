@@ -3,9 +3,13 @@ import "../../../assets/styles/visualcalculator.css";
 import UseMousePosition2D from "../../../utils/usemouseposition2d";
 import { useKeyDown } from "../../../utils/useKeyDown";
 import { drawType, detectMouseOver } from "./drawingFactories";
+import Paragraph from "../../../components/paragraph";
+import Modal from "../../../components/modal";
+import ModalButton from "../../../components/modalbutton";
 
 
 function VisualCalculator() {
+    const [isOpen, setIsOpen] = useState(false);
     const canvasRef = useRef(null);
     const [coords, handleCoords] = UseMousePosition2D(false);
     //const [startX, setStartX] = useState(0);
@@ -196,7 +200,53 @@ function VisualCalculator() {
 
     return (
         <div className="base">
-            <h1>Visual Calculator</h1>
+            <Modal onClose={() => setIsOpen(false)}
+                open={isOpen}
+            >
+                <Paragraph
+                    header={"Motivation"}
+                    str={[
+                        `Calculators are a pretty common app for people to build. That being the case they aren't very exciting.
+                         This turned into a cool way to play with the html canvas while making a more exciting calculator.`
+                    ]}
+                    children={[]}
+                />
+                <Paragraph
+                    header={"Usage"}
+                    str={[
+                        "Under construction - subject to change",
+                        "Start by clicking the Initial button in the left column.",
+                        "Click the open canvas to place the node.",
+                        "Enter a value into the Initial node's input box.",
+                        "Click and add as many other node types as desired filling out the inputs.",
+                        "Link the nodes by selecting the front portion of the chevron and dragging to the back portion of the next.",
+                        "Delete nodes by selecting the Delete button then clicking the node to remove.",
+                        "* Zoom with the mouse scroll wheel.",
+                        "* Pan with the mouse scroll wheel button.",
+                        "* Press space bar to center the canvas.",
+                    ]}
+                />
+
+                <Paragraph
+                    header={"Fun Facts"}
+                    str={["I was enjoying the drawing portion of this way too much.",
+                    ]}
+                    children={[]}
+                />
+            </Modal>
+            <div className="base-inline">
+                <h1>Visual Calculator</h1>
+                <ModalButton onClick={() => setIsOpen(true)} />
+            </div>
+            <Paragraph header={"Under Construction"} str={[
+                "The list of things that need to be completed:",
+                "1. Add input boxes to the nodes.",
+                "2. Build the system to link the nodes.",
+                "3. Build the system to link the nodes.",
+                "4. Revisit user interactions:",
+                "- Clicking to select a node then clicking the canvas to place it isn't the most obvious.",
+                "- Zooming needs to be addressed. It works but could be better."
+            ]} />
             <div className="vcalculator-inline-container">
                 <ul className="vcalculator-controls-container">
                     <li className="vcalculator-controls-li">
@@ -284,6 +334,8 @@ function VisualCalculator() {
                     }}
                 />
             </div>
+            <br></br>
+            <br></br>
         </div>
     );
 }

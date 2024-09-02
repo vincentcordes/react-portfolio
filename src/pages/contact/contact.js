@@ -7,7 +7,7 @@ function Contact() {
         <div className="base">
             <h1>vmcordes@protonmail.com</h1>
             <Github href={"https://github.com/vincentcordes"} />
-            <h2>Resume</h2>
+            <h2>Resume on email request</h2>
         </div>
     );
 }

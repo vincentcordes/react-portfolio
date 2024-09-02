@@ -5,6 +5,7 @@
     background-color: #f1f4ff33;
     border-radius: 8px;
     overflow: hidden;
+    margin-bottom: 16px;
 }
 
 .vcalculator-inline-container {
@@ -18,6 +19,7 @@
     border: solid 4px #37393a;
     border-radius: 8px;
     background-color: #f1f4ff33;
+    margin-bottom: 16px;
 }
 
 .vcalculator-controls-button {

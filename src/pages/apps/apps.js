@@ -24,8 +24,8 @@ function Apps() {
                     summary={"A random party generator for Final Fantasy."} />
                 <Card header={"Visual Calculator"}
                     link={"/apps/visualcalculator"}
-                    imgPath={""}
-                    summary={""} />
+                    imgPath={"visualcalculator.png"}
+                    summary={"A calculator using visual nodes."} />
                 <Card header={"Wordle Assistant"}
                     link={"/apps/wordle_assistant"}
                     imgPath={"wordleassistant.png"}

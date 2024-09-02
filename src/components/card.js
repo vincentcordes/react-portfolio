@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/card.css";
-import image from "../assets/images/demo.png";
+// import image from "../assets/images/demo.png";
 
 function Card({ header, link, imgPath, summary }) {
     const images = require.context("../assets/images/general", true);
