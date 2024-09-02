@@ -224,6 +224,8 @@ function findWords(positionalCharArray, excludedPositionalChars, include, exclud
         }
     }
 
+    console.log(excludedPositionalChars);
+
     const includeChars = include.replace(/[^a-zA-Z]+/g, '').toUpperCase().split('');
     const excludeChars = exclude.replace(/[^a-zA-Z]+/g, '').toUpperCase().split('');
 
@@ -262,16 +264,21 @@ function findWords(positionalCharArray, excludedPositionalChars, include, exclud
             }
         }
 
+        // early break when possible
+        if (!include) return;
+
         // check for chars we know are not at a position
-        excludedPositionalChars.forEach(c => {
-            if (c !== undefined) {
-                for (let i = 0; i < 5; i++) {
-                    if (w[i] === c) {
+        for (let i = 0; i < 5; i++) {
+            if (excludedPositionalChars[i] !== undefined && excludedPositionalChars[i].length > 0) {
+                for (let j = 0; j < excludedPositionalChars.length; j++) {
+                    if (w[i] === excludedPositionalChars[i][j]) {
+                        console.log(w[i], excludedPositionalChars[i][j]);
                         include = false;
                     }
                 }
             }
-        });
+        }
+
 
         if (include) {
             trimmedDictionary.push(w);
