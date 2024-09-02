@@ -7,7 +7,7 @@ function Projects() {
     return (
         <div className="base">
             <Paragraph header={"Projects"}
-                str={["A listing and breakdown of various projects I've worked on over the years."]} />
+                str={["A listing and breakdown of various projects I've worked on over the years. This is by no means the extent of them, just some highlights."]} />
             <div className="base-container">
                 <Card header={"Cmdlist"}
                     link={"/projects/cmdlist"}
@@ -16,7 +16,7 @@ function Projects() {
                 />
                 <Card header={"Video Capture"}
                     link={"/projects/videocapture"}
-                    imgPath={""}
+                    imgPath={"videocapture.png"}
                     summary={"Electron app for basic video capture."}
                 />
                 <Card header={"Professoinal"}

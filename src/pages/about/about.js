@@ -8,7 +8,7 @@ function About() {
     return (
         <div className="base">
             <h1>About</h1>
-            <Github href={"https://github.com/vincentcordes/react-portfolio"} />
+            <Github header={"Github"} href={"https://github.com/vincentcordes/react-portfolio"} />
             <Paragraph header={"Motivation"}
                 str={[
                     `To start with, it's better to have a portfolio and not need it, than to not have a portfolio and need it.`,
@@ -20,13 +20,20 @@ function About() {
             <Paragraph header={"How is this site built?"}
                 str={[
                     `Its a React app using Java Script running on a Digital Ocean droplet, 
-                     nothing too complicated on the server end of it. Just Debian and with Nginx.`,
+                     nothing too complicated on the server end of it. Just Debian and Nginx.`,
+                    `One of my favorite things about this portfolio is the cost. I was able to pick up the domain
+                    name on sale from Namecheap for something like $3.00 and the droplet gives me 1GB of ram with 1 virtual CPU
+                    for $6.00 a month. I think that's a pretty sweet deal for a platform I can customize.`,
+                    `It's http instead of https because I didn't want to shell out the extra money. That being the case
+                    it isn't likely that I will ever add downloads here since no one in their right mind would use them anyway.`,
+                    `In the future I will likely add an API that lives on this server and interacts with the app. The plan at
+                    this point is to use Rust and sqlite to keep the resource requirements to a minimum.`,
                 ]} />
 
             <Paragraph header={"Why are some things not complete or sparse?"}
                 str={[
                     `In typical week I spend 40 to 50 hours writing code for work. I really enjoy writing code and building applications,
-                    but there are other things to do that I also enjoy.`,
+                    but there are other things to do. Some that I enjoy and some that just need to be done.`,
                     `When it comes to personal projects and free time I tend to let whatever I'm interested in take the lead. An example
                     of this is my recent dive into the Godot game engine and analyzing its feasibility outside of games.`,
                     `Those things being said, this particular app gets time as inspiration and motivation comes along.`,

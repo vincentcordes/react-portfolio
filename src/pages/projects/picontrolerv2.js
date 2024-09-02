@@ -7,7 +7,7 @@ function PiControllerV2() {
     return (
         <div className="base">
             <h1>PiControllerV2</h1>
-            <Github href={"https://github.com/vincentcordes/picontrollerv2"} />
+            <Github header={"Github"} href={"https://github.com/vincentcordes/picontrollerv2"} />
             <ComingSoon />
         </div>
     )

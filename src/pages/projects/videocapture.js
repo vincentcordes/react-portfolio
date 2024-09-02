@@ -7,7 +7,7 @@ function VideoCapture() {
     return (
         <div className="base">
             <h1>Video Capture</h1>
-            <Github href={"https://github.com/vincentcordes/VideoCapture"} />
+            <Github header={"Github"} href={"https://github.com/vincentcordes/VideoCapture"} />
             <ComingSoon />
         </div>
     )

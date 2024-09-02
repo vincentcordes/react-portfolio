@@ -19,7 +19,7 @@ function Professional() {
                 `In my time at MAS I have worked on more than a dozen projects. Most of these have
                 been desktop applications in the automation and inspection sphere using C# and WPF.`,
                 `Starting a few years ago we began work on QC Plus Core™. At this point in my career QC Plus
-                is what I would consider my Magnum Opus. It's an amazing platform designed for automated metrology
+                is what I would consider my magnum opus. It's an amazing platform designed for automated metrology
                 built from the ground up by one other colleague and myself.`,
             ]} />
             <Github href={"https://www.mfgautosys.com/"} header={"Manufacturing Automation Systems"} />

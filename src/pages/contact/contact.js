@@ -6,7 +6,7 @@ function Contact() {
     return (
         <div className="base">
             <h1>vmcordes@protonmail.com</h1>
-            <Github href={"https://github.com/vincentcordes"} />
+            <Github header={"Github"} href={"https://github.com/vincentcordes"} />
             <h2>Resume on email request</h2>
         </div>
     );

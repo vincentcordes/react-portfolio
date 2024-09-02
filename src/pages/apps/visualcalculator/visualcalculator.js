@@ -221,6 +221,7 @@ function VisualCalculator() {
                         "Click and add as many other node types as desired filling out the inputs.",
                         "Link the nodes by selecting the front portion of the chevron and dragging to the back portion of the next.",
                         "Delete nodes by selecting the Delete button then clicking the node to remove.",
+                        "* Click and hold the to drag the nodes around the canvas.",
                         "* Zoom with the mouse scroll wheel.",
                         "* Pan with the mouse scroll wheel button.",
                         "* Press space bar to center the canvas.",

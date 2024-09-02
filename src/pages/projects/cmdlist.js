@@ -36,7 +36,7 @@ function Cmdlist() {
                 <h1>Cmdlist</h1>
                 <ModalButton onClick={() => setIsOpen(true)} />
             </div>
-            <Github href={"https://github.com/vincentcordes/cmdlist"} />
+            <Github header={"Github"} href={"https://github.com/vincentcordes/cmdlist"} />
             <Paragraph header={"Purpose"}
                 str={[
                     "cmdlist is a cross platform (Windows & Linux) command line application that builds a custom list of commands for user reference.",
